@@ -7,8 +7,8 @@ const celebritySchema = new Schema(
     occupation: String,
     catchPhrase: String
   }
-)
+);
 
-Celebrity = mongoose.model('Celebrity', celebritySchema);
+const Celebrity = mongoose.model('Celebrity', celebritySchema);
 
 module.exports = Celebrity;

@@ -13,8 +13,6 @@ mongoose.connect(`${URI}${NAME}`)
   })
   .catch(err => console.log("Error connecting to mongo: ", err));
 
-// GET All celebrities
-
 router.get('/celebrities', (req, res, next) => {
   Celebrity.find()
     .then(celebrities => {
